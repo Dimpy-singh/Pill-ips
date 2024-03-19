@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Test workflow</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-W6ss+JNHPXWTqMnW8f1nmR/7GpO9AqrhU5Hk79NlGVb9qRfOWrZmttBUot0ScFIuzSHR5N0LwCEBz4+/66a4ng==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&family=Public+Sans:ital,wght@0,800;1,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+    <script>
+          document.addEventListener('DOMContentLoaded', function() {
+          // Reset input field on page load
+          var inputField = document.querySelector('.input-search');
+          inputField.value = '';
+        });
+    
+      </script>
+</head>
+<div class="content">
+
+  
+  <div class="big-title" style="padding: 5%; margin-top: 10%;">
+    <h1 class="ml12"><span style="font-size: 90px; color: rgb(5, 5, 59);">PILL</span>-IPS</h1>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+  
+  </div>
+    <h2 style="font-size: 2rem; text-transform: uppercase; font-weight: 400; color:blue; margin-bottom: 5%;">Allopathic</h2>
+    <p style="width: 1000px; text-align: center; line-height: 1.8;">
+      Describe your health concern below, and I will provide information on how allopathic medicine, with its emphasis on evidence-based practices and quick symptom relief, may offer potential approaches to address your specific problem.
+    </p>
+  <h2 style="font-size: 1rem;font-weight: 400; color:blue; margin-top: 5%;">Share your problem by clicking the button below</h2>
+  <body>
+    <!-- <script type="module">
+    import Chatbot from "https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js"
+    Chatbot.init({
+        chatflowid: "b44dbdd0-9f66-400e-8e7b-dd1632c2f3df",
+        apiHost: "http://localhost:3000",
+    })
+</script> -->
+</div>
+  
+  <div class="search-box" style="margin-top: 30px;">
+    <form action="/" method="post">
+    <button type="submit"  class="btn-search"><i class="fas fa-stethoscope" onclick="clearContent()"></i></button>
+    <input type="text" class="input-search" name="problem">
+    </form>
+  </div>
+  
+  <!-- partial -->
+  <script src='https://unpkg.com/feather-icons'></script><script  src="./script.js"></script>
+  
+</body>
+<nav class="navbar">
+  <ul class="navbar__menu">
+    <li class="navbar__item">
+      <a href="#" class="navbar__link"><i class="fas fa-home"></i><span>Home</span></a>
+    </li>
+    <li class="navbar__item">
+      <a href="#" class="navbar__link"><i class="fas fa-stethoscope"></i><span>Homeopathic medicines</span></a>        
+    </li>
+    <li class="navbar__item">
+      <a href="#" class="navbar__link"><i class="fas fa-regular fa-book"></i><span>Ayurvedic medicines</span></a>        
+    </li>
+    <li class="navbar__item">
+      <a href="#" class="navbar__link"><i class="fas fa-pills"></i><span>Allopathic medicines</span></a>        
+    </li>
+    <li class="navbar__item">
+      <a href="#" class="navbar__link"><i class="fas fa-solid fa-phone"></i></i><span>Contact</span></a>        
+    </li>
+  
+  </ul>
+</nav>
+</html>

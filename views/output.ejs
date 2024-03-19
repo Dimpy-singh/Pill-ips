@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Test workflow</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-W6ss+JNHPXWTqMnW8f1nmR/7GpO9AqrhU5Hk79NlGVb9qRfOWrZmttBUot0ScFIuzSHR5N0LwCEBz4+/66a4ng==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&family=Public+Sans:ital,wght@0,800;1,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./output.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+</head>
+<body>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<%for (let cure of cures){%>
+   <div id="container">	
+    <div class="product-details">
+        <h1 style="color: blue; margin-bottom: 10px;"><%=cure.name%></h1>
+        <strong style="margin-top: 5px; display: block; margin-bottom: 5px;">some side-effects are listed below</strong>
+        <br>
+        <p class="information" style="margin-bottom: 15px;"><%=cure.side_effects%></p>
+        <br>
+        <strong style="margin-top: 5%;">used for:<%=cure.uses%></strong>
+    </div>
+
+    <div class="product-image">
+        <img src="<%=cure.imageurl%>" alt="">
+    </div>
+</div>
+<%}%>
+
+
+
+
+
+  <script src='https://unpkg.com/feather-icons'></script><script  src="./script.js"></script>
+  
+</body>
+<nav class="navbar">
+  <ul class="navbar__menu">
+    <li class="navbar__item">
+      <a href="#" class="navbar__link"><i class="fas fa-home"></i><span>Home</span></a>
+    </li>
+    <li class="navbar__item">
+      <a href="#" class="navbar__link"><i class="fas fa-stethoscope"></i><span>Homeopathic medicines</span></a>        
+    </li>
+    <li class="navbar__item">
+      <a href="#" class="navbar__link"><i class="fas fa-regular fa-book"></i><span>Ayurvedic medicines</span></a>        
+    </li>
+    <li class="navbar__item">
+      <a href="#" class="navbar__link"><i class="fas fa-pills"></i><span>Allopathic medicines</span></a>        
+    </li>
+    <li class="navbar__item">
+      <a href="#" class="navbar__link"><i class="fas fa-solid fa-phone"></i></i><span>Contact</span></a>        
+    </li>
+  
+  </ul>
+</nav>
+</html>
